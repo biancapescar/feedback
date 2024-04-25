@@ -1,0 +1,177 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+ol {
+    list-style-type: none;
+}
+
+input,
+button {
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 0.9375rem;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ratingForm {
+    background-image: radial-gradient(circle at 50% 0, hsl(213, 19%, 18%), hsl(216, 12%, 8%) 150%);
+    font-family: "Overpass", sans-serif;
+    max-width: 22rem;
+    border-radius: 1rem;
+}
+
+fieldset {
+    border: none;
+    padding: 1.2rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.rating-card-star {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    background-color: hsla(217, 12%, 63%, 0.13);
+}
+
+.rating-card-header {
+    color: hsl(0, 0%, 100%);
+    margin: 1rem 0;
+}
+
+.rating-card-ctn {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+
+.rating-bubble {
+
+    background-color: hsl(213, 19%, 18%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.rating-bubble:has(input:focus-visible) {
+    /* checked styles here */
+    outline: 2px solid white;
+    border-radius: 30px;
+}
+
+.rating-bubble:has(input:checked) {
+    /* focus styles here */
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-weight: 700;
+}
+
+.rating-bubble:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+    font-weight: 700;
+}
+
+.rating_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Optional: Style the "Submit" button */
+.review-card-btn button {
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 2rem;
+    color: hsl(0, 0%, 100%);
+    padding: 0.85rem;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.thank-you-card {
+    color: hsl(0, 0%, 100%);
+    background-image: radial-gradient(circle at 50% 0, hsl(213, 19%, 18%), hsl(216, 12%, 8%) 150%);
+    font-family: "Overpass", sans-serif;
+    max-width: 22rem;
+    border-radius: 1rem;
+    display: none;
+    padding: 1.2rem;
+}
+
+.selected-rating {
+    color: hsl(25, 97%, 53%);
+    border-radius: 2rem;
+    border: 1px hsl(216, 12%, 54%);
+    margin: auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #262e38;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.card__heading {
+    margin: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 0.75rem;
+}
+
+.thank-you__desc {
+    color: hsl(217, 12%, 63%);
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.thank-you__img {
+    margin: auto;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(25, 97%, 53%);
+}
